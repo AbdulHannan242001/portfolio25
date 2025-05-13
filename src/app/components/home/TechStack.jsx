@@ -97,12 +97,12 @@ const TechStack = () => {
         <div className="max-w-[1400px] p-[10px] mx-auto flex flex-1 flex-wrap gap-[10px] relative h-full w-full min-h-[50dvh] overflow-hidden rounded-md shadow-2xl shadow-foreground">
           <motion.div
             className="absolute size-[120px] bg-gradient-to-tr from-neutral-50 to-neutral-100 rounded-full blur-3xl z-10 pointer-events-none"
-            style={{ x, y }}
+            style={{ x, y, translateX: "-50%", translateY: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           />
           <motion.div
             className="absolute size-[120px] bg-gradient-to-tr from-primary to-sky-500 rounded-full blur-3xl z-10 pointer-events-none"
-            style={{ x, y }}
+            style={{ x, y, translateX: "-50%", translateY: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           />
           {stackData.map((item, index) => (

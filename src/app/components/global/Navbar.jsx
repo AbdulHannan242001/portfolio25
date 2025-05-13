@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import CustomLink from "./CustomLink";
+import CustomButton from "./CustomButton";
 
 const Navbar = () => {
   return (
@@ -8,9 +11,17 @@ const Navbar = () => {
         <p className="font-mono text-lg font-bold">AH</p>
       </div>
       <div className="flex flex-row items-center w-fit">
-        <CustomLink text="Home" href="/" />
-        <CustomLink text="About" href="/about" />
-        <CustomLink text="Contact" href="/" />
+        <CustomLink text="Home" targetBlank={false} href="/" />
+        <CustomLink text="About" targetBlank={false} href="/about" />
+        <CustomButton
+          text="Contact"
+          onClick={() => {
+            window.open(
+              "https://mail.google.com/mail/?view=cm&fs=1&to=abdulhannan242001@outlook.com",
+              "_blank"
+            );
+          }}
+        />
       </div>
     </main>
   );

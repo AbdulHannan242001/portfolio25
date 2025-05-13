@@ -1,20 +1,22 @@
-"use client";
+'use client';
 
-import { motion, useAnimation } from "framer-motion";
-import Link from "next/link";
-import React, { useRef, useEffect, useState } from "react";
+import { motion, useAnimation } from 'framer-motion';
+import Link from 'next/link';
+import React, { useRef, useEffect, useState } from 'react';
 
-const CustomLink = ({ text, href }) => {
+const CustomLink = ({ text, href, targetBlank = true }) => {
   const controls = useAnimation();
 
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      {...(targetBlank ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+    >
       <motion.div
-        className="flex flex-col gap-0 px-4 py-3 rounded text-black font-medium cursor-pointer font-mono
-        "
+        className="flex flex-col gap-0 px-4 py-3 rounded text-black font-medium cursor-pointer font-mono"
         transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-        onMouseEnter={() => controls.start("hover")}
-        onMouseLeave={() => controls.start("initial")}
+        onMouseEnter={() => controls.start('hover')}
+        onMouseLeave={() => controls.start('initial')}
       >
         <div className="h-[22px] flex flex-col overflow-hidden">
           <motion.div className="flex">
@@ -24,7 +26,7 @@ const CustomLink = ({ text, href }) => {
                 letter={letter}
                 delay={index * 0.01 + 0.2}
                 controls={controls}
-                isSpace={letter === " "}
+                isSpace={letter === ' '}
               />
             ))}
           </motion.div>
@@ -35,7 +37,7 @@ const CustomLink = ({ text, href }) => {
                 letter={letter}
                 delay={index * 0.01 + 0.15}
                 controls={controls}
-                isSpace={letter === " "}
+                isSpace={letter === ' '}
               />
             ))}
           </motion.div>
@@ -66,7 +68,7 @@ const Alphabet = ({ letter, delay, controls, isSpace }) => {
       variants={variants}
       animate={controls}
       transition={{ duration: 0.5, delay, ease: [0.4, 0, 0.2, 1] }}
-      className={`inline-block ${isSpace ? "mr-1" : "mr-[0px]"}`}
+      className={`inline-block ${isSpace ? 'mr-1' : 'mr-[0px]'}`}
     >
       {letter}
     </motion.span>

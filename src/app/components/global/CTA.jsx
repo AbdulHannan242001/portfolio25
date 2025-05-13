@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import CustomButton from "./CustomButton";
@@ -17,7 +17,15 @@ const CTA = () => {
           </p>
         </div>
         <div className="w-4/12 py-[60px] px-[30px] flex items-center justify-center">
-          <CustomButton text="Contact" onClick={() => {}} />
+          <CustomButton
+            text="Contact"
+            onClick={() => {
+              window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=abdulhannan242001@outlook.com",
+                "_blank"
+              );
+            }}
+          />
         </div>
       </div>
     </div>
