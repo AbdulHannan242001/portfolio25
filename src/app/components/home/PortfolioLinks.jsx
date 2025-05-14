@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import CustomButton from "../global/CustomButton";
 
 export const PortfolioLinks = ({ linkData, btnTxt }) => {
+  console.log(linkData);
   return (
     <section className="">
       <div className="mx-auto max-w-[1400px]">
@@ -99,8 +100,8 @@ const Link = ({ heading, imgSrc, href, btnTxt }) => {
           whileHover: { scale: 1, rotate: "12.5deg" },
         }}
         transition={{ type: "spring" }}
-        src={imgSrc && imgSrc ? imgSrc : "https://via.placeholder.com/150"} 
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 border"
+        src={imgSrc || "/assets/placeholder.png"}
+        className="absolute z-10 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
       />
 

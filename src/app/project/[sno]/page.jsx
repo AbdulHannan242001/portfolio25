@@ -1,12 +1,12 @@
 "use client";
 
-import Banner from "@/app/components/project/Banner";
 import React, { useRef } from "react";
 import projects from "@/app/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import CustomLink from "@/app/components/global/CustomLink";
-import CTA from "@/app/components/global/CTA";
+import Banner from "../../components/project/Banner";
+import CTA from "../../components/global/CTA";
+import CustomLink from "../../components/global/CustomLink";
 
 const Page = ({ params }) => {
   const resolvedParams = React.use(params);
@@ -21,7 +21,7 @@ const Page = ({ params }) => {
   });
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [150, 0]), // Move 100px down
+    useTransform(scrollYProgress, [0, 1], [200, 100]), // Move 100px down
     { stiffness: 100, damping: 30 }
   );
   const y2 = useSpring(
@@ -35,36 +35,32 @@ const Page = ({ params }) => {
 
   return (
     <div className="space-y-32" ref={containerRef}>
-      <Banner url={project.banner} />
-      <div className="max-w-[1400px] mx-auto">
+      <Banner url={project.banner || "/assets/placeholder.png"} />
+      <div className="max-w-[1400px] mx-auto pt-[100px]">
         <div className="flex flex-col gap-[10px]">
           <div className="flex flex-row justify-between items-end">
             <h3 className="text-6xl font-mono tracking-tighter uppercase">
               {project.title}
             </h3>
-            {project.link && <CustomLink href={project.link} text="Visit Site" />}
+            {project.link && (
+              <CustomLink href={project.link} text="Visit Site" />
+            )}
           </div>
           <div className="flex flex-row w-full relative">
             <p className="max-w-xl leading-tight tracking-wide">
               {project.desc}
             </p>
             <motion.div
-              className="absolute -bottom-[100%] right-0 border min-h-[200px] min-w-[400px] will-change-transform"
+              className="absolute -bottom-[100%] right-0 min-h-[200px] min-w-[400px] will-change-transform"
               style={{ y: y1 }}
             >
-              {project.pic1 ? (
-                <Image
-                  src={project.pic1}
-                  alt={`${project.title} image 1`}
-                  width={400}
-                  height={200}
-                  className="object-cover"
-                />
-              ) : (
-                <div className="bg-gray-200 flex items-center justify-center min-h-[200px] min-w-[400px]">
-                  No Image
-                </div>
-              )}
+              <Image
+                src={project.pic1 || "/assets/placeholder.png"}
+                alt={`${project.title} image 1`}
+                width={400}
+                height={200}
+                className="object-cover"
+              />
             </motion.div>
           </div>
           <div className="w-full flex flex-col gap-[10px] mt-[120px]">
@@ -84,22 +80,16 @@ const Page = ({ params }) => {
             <>
               <div className="flex flex-row w-full relative mt-[120px]">
                 <motion.div
-                  className="absolute -bottom-[50%] left-0 border min-h-[200px] min-w-[400px] will-change-transform"
+                  className="absolute -bottom-[50%] left-0 min-h-[200px] min-w-[400px] will-change-transform"
                   style={{ y: y2 }}
                 >
-                  {project.pic2 ? (
-                    <Image
-                      src={project.pic2}
-                      alt={`${project.title} image 2`}
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div className="bg-gray-200 flex items-center justify-center min-h-[200px] min-w-[400px]">
-                      No Image
-                    </div>
-                  )}
+                  <Image
+                    src={project.pic2 || "/assets/placeholder.png"}
+                    alt={`${project.title} image 2`}
+                    width={400}
+                    height={200}
+                    className="object-cover"
+                  />
                 </motion.div>
                 <div className="flex flex-col gap-[10px] ml-auto w-fit">
                   <h4 className="text-4xl font-bold">Problem</h4>
