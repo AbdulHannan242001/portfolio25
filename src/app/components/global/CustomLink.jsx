@@ -18,7 +18,7 @@ const CustomLink = ({ text, href, targetBlank = true }) => {
         onMouseEnter={() => controls.start('hover')}
         onMouseLeave={() => controls.start('initial')}
       >
-        <div className="h-[22px] flex flex-col overflow-hidden">
+        <div className="h-[16px] sm:h-[22px] flex flex-col overflow-hidden">
           <motion.div className="flex">
             {Array.from(text).map((letter, index) => (
               <Alphabet
@@ -68,7 +68,7 @@ const Alphabet = ({ letter, delay, controls, isSpace }) => {
       variants={variants}
       animate={controls}
       transition={{ duration: 0.5, delay, ease: [0.4, 0, 0.2, 1] }}
-      className={`inline-block ${isSpace ? 'mr-1' : 'mr-[0px]'}`}
+      className={`inline-block ${isSpace ? 'mr-1' : 'mr-[0px]'} sm:text-base text-xs`}
     >
       {letter}
     </motion.span>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import projects from "@/app/data";
+import projects from "../../data";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Banner from "../../components/project/Banner";
@@ -34,12 +34,12 @@ const Page = ({ params }) => {
   }
 
   return (
-    <div className="space-y-32" ref={containerRef}>
+    <div className="pt-24" ref={containerRef}>
       <Banner url={project.banner || "/assets/placeholder.png"} />
-      <div className="max-w-[1400px] mx-auto pt-[100px]">
-        <div className="flex flex-col gap-[10px]">
+      <div className="max-w-[1400px] mx-auto pt-[50px] sm:pt-[100px]">
+        <div className="flex flex-col gap-[10px] sm:m-0 m-2">
           <div className="flex flex-row justify-between items-end">
-            <h3 className="text-6xl font-mono tracking-tighter uppercase">
+            <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               {project.title}
             </h3>
             {project.link && (
@@ -47,11 +47,11 @@ const Page = ({ params }) => {
             )}
           </div>
           <div className="flex flex-row w-full relative">
-            <p className="max-w-xl leading-tight tracking-wide">
+            <p className="max-w-xl leading-tight text-sm sm:text-base tracking-wide">
               {project.desc}
             </p>
             <motion.div
-              className="absolute -bottom-[100%] right-0 min-h-[200px] min-w-[400px] will-change-transform"
+              className="absolute bottom-[15%] sm:-bottom-[100%] right-0 min-h-[100px] sm:min-h-[200px] min-w-[200px] sm:min-w-[400px] will-change-transform"
               style={{ y: y1 }}
             >
               <Image
@@ -63,9 +63,9 @@ const Page = ({ params }) => {
               />
             </motion.div>
           </div>
-          <div className="w-full flex flex-col gap-[10px] mt-[120px]">
+          <div className="w-full flex flex-col gap-[10px] my-[160px] sm:my-[120px]">
             <h4 className="text-4xl font-bold">Skills</h4>
-            <div className="w-4/12 flex flex-row gap-[10px] flex-wrap">
+            <div className="w-full sm:w-4/12 flex flex-row gap-[10px] flex-wrap">
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
@@ -78,9 +78,9 @@ const Page = ({ params }) => {
           </div>
           {project.problem && (
             <>
-              <div className="flex flex-row w-full relative mt-[120px]">
+              <div className="flex flex-row w-full relative mt-[160px] sm:mt-[120px]">
                 <motion.div
-                  className="absolute -bottom-[50%] left-0 min-h-[200px] min-w-[400px] will-change-transform"
+                  className="absolute top-[-25%] sm:-bottom-[50%] left-0 min-h-[100px] sm:min-h-[200px] min-w-[200px] sm:min-w-[400px] will-change-transform"
                   style={{ y: y2 }}
                 >
                   <Image
@@ -101,7 +101,7 @@ const Page = ({ params }) => {
             </>
           )}
           {project.solution && (
-            <div className="flex flex-row w-full relative mt-[120px]">
+            <div className="flex flex-row w-full relative my-[60px] sm:my-[120px]">
               <div className="flex flex-col gap-[10px] w-fit">
                 <h4 className="text-4xl font-bold">Solution</h4>
                 <p className="max-w-xl leading-tight tracking-wide">

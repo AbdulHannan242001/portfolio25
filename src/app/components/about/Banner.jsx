@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
+import { listLink, FusionFilling, Portfolio3D, UIRedesign, KnightGame, Components, PetStore } from "../../images";
 
 const Banner = () => {
   const containerRef = useRef(null);
@@ -21,8 +22,8 @@ const Banner = () => {
 
   const pictureArray = [
     {
-      src: "",
-      credits: "Photo by Pixabay",
+      src: Portfolio3D,
+      credits: "",
       topValue: "0%",
       leftValue: "0%",
       scaleValue: scale4times,
@@ -30,8 +31,8 @@ const Banner = () => {
       heightPercentage: "25vh",
     },
     {
-      src: "",
-      credits: "Photo by Sebastian Palomino",
+      src: FusionFilling,
+      credits: "",
       topValue: "30%",
       leftValue: "-25%",
       scaleValue: scale9times,
@@ -39,8 +40,8 @@ const Banner = () => {
       heightPercentage: "30vh",
     },
     {
-      src: "",
-      credits: "Photo by Pedro Figueras",
+      src: listLink,
+      credits: "",
       topValue: "29%",
       leftValue: "4%",
       scaleValue: scale6times,
@@ -48,8 +49,8 @@ const Banner = () => {
       heightPercentage: "28vh",
     },
     {
-      src: "",
-      credits: "Photo by Jaime Reimer",
+      src: UIRedesign,
+      credits: "",
       topValue: "-32%",
       leftValue: "30%",
       scaleValue: scale8times,
@@ -57,8 +58,8 @@ const Banner = () => {
       heightPercentage: "35vh",
     },
     {
-      src: "",
-      credits: "Photo by Irina Iriser",
+      src: KnightGame,
+      credits: "",
       topValue: "-30%",
       leftValue: "1.5%",
       scaleValue: scale6times,
@@ -66,8 +67,8 @@ const Banner = () => {
       heightPercentage: "30vh",
     },
     {
-      src: "",
-      credits: "Photo by Ricky Esquivel",
+      src: Components,
+      credits: "",
       topValue: "13%",
       leftValue: "28%",
       scaleValue: scale10times,
@@ -75,8 +76,8 @@ const Banner = () => {
       heightPercentage: "50vh",
     },
     {
-      src: "",
-      credits: "Photo by Pixabay",
+      src: PetStore,
+      credits: "",
       topValue: "-12%",
       leftValue: "-27%",
       scaleValue: scale7times,
@@ -121,8 +122,8 @@ const Banner = () => {
                     <Image
                       src={src}
                       alt={credits}
-                      fill
-                      className="w-full h-full object-cover"
+                      priority
+                      className="w-full h-full object-center object-cover"
                     />
                   </div>
                 </motion.div>

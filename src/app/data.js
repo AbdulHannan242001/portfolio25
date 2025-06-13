@@ -1,13 +1,41 @@
+import {
+  listLink,
+  listLinkHome,
+  listLinkList,
+  Bethmar,
+  BethmarLoc,
+  BethmarServices,
+  SQCommercial,
+  SQCommercialAbout,
+  SQCommercialContact,
+  FusionFilling,
+  FusionFillingDetails,
+  FusionFillingHome,
+  TSAdminDashboard,
+  TSAdminAdmin,
+  TSAdminReports,
+  Portfolio3D,
+  PortfolioContact,
+  PetStore,
+  PetStoreBlog,
+  Roofright,
+  RoofrightHome,
+  UIRedesign,
+  KnightGame,
+  Components,
+  NotFound,
+} from "../../src/app/images";
+
 const projects = [
   {
     id: 1,
     title: "List Link App",
-    banner: "",
+    banner: listLink,
     desc: "List Link App is a modern web-based platform tailored for creating, organizing, and sharing collaborative lists. Users can build customized lists, assign names, and share them effortlessly through unique URLs. With real-time updates and multi-user collaboration, it’s an ideal solution for teams, families, and project groups seeking efficient list management.",
-    pic1: "",
+    pic1: listLinkHome,
     problem:
       "Our client approached us with the need for a streamlined solution to manage and share lists efficiently. Their primary requirement was a secure, intuitive interface that could be used by individuals and groups alike. Additionally, they wanted a feature that enabled real-time collaboration for event planning and task coordination with friends, family, or teams.",
-    pic2: "",
+    pic2: listLinkList,
     solution:
       "We developed a comprehensive platform that met the client's needs by offering an intuitive interface and powerful list management capabilities. The platform introduces structured 'Spaces'—ranging from private to general and invite-only—allowing users to control visibility and participation. Users can invite others, assign roles, and collaboratively manage lists with real-time updates, enhancing productivity and coordination across any group setting.",
     tags: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design"],
@@ -16,12 +44,12 @@ const projects = [
   {
     id: 2,
     title: "Bethmar Website",
-    banner: "",
+    banner: Bethmar,
     desc: "A clean, responsive, and modern website designed for Bethmar, a construction company based in London. The site emphasizes an intuitive user experience and strong accessibility standards, ensuring seamless interaction across all devices and for all users.",
-    pic1: "",
+    pic1: BethmarLoc,
     problem:
       "Bethmar approached us with the goal of establishing a credible online presence. They required a website that not only reflected their professionalism but was also responsive across devices and inclusive for users of all abilities, adhering to modern accessibility practices.",
-    pic2: "",
+    pic2: BethmarServices,
     solution:
       "We delivered a fully responsive, modern website tailored to Bethmar’s needs. The final product featured a contemporary, user-friendly design and was built with accessibility at its core—ensuring consistent performance and usability across a wide range of devices and user conditions.",
     tags: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design"],
@@ -30,12 +58,12 @@ const projects = [
   {
     id: 3,
     title: "SQ Commercial Website",
-    banner: "",
+    banner: SQCommercial,
     desc: "A precise Figma-to-React conversion project incorporating on-page SEO, full cross-browser compatibility, and seamless responsiveness across all modern devices. The result was a pixel-perfect and performance-optimized digital presence for SQ Commercial.",
-    pic1: "",
+    pic1: SQCommercialAbout,
     problem:
       "SQ Commercial required an accurate conversion of their Figma design into a functional React-based website. They emphasized the importance of maintaining design fidelity, implementing on-page SEO best practices, ensuring compatibility across multiple browsers, and delivering a responsive experience on all device types.",
-    pic2: "",
+    pic2: SQCommercialContact,
     solution:
       "We successfully delivered a pixel-perfect Figma-to-React implementation that met all of SQ Commercial’s expectations. The website was optimized with on-page SEO techniques, tested for cross-browser consistency, and designed to provide a flawless user experience across desktops, tablets, and mobile devices.",
     tags: [
@@ -50,12 +78,12 @@ const projects = [
   {
     id: 4,
     title: "Fusion Fillings Website",
-    banner: "",
+    banner: FusionFilling,
     desc: "A custom e-commerce platform developed for a home-based kitchen specializing in Momos. The website is fully responsive, performance-optimized, and designed to deliver a seamless user experience. With a clean and modern interface, intuitive navigation, and a streamlined checkout process, the platform enhances both usability and visual appeal.",
-    pic1: "",
+    pic1: FusionFillingHome,
     problem:
       "Fusion Fillings faced challenges managing orders through WhatsApp, which led to inefficiencies and hindered brand visibility. They approached us to create a solution that could centralize their ordering system, improve customer experience, and establish a strong online identity.",
-    pic2: "",
+    pic2: FusionFillingDetails,
     solution:
       "We designed and developed a high-performance e-commerce website, placing a strong emphasis on SEO to improve discoverability and brand credibility. The site’s Menu page was thoughtfully crafted to simplify the ordering process, eliminating unnecessary communication loops. This led to faster order placements, enhanced user satisfaction, and a noticeable boost in local brand recognition.",
     tags: [
@@ -71,12 +99,12 @@ const projects = [
   {
     id: 5,
     title: "TS Admin Dashboard",
-    banner: "",
+    banner: TSAdminDashboard,
     desc: "A fully functional React-based admin dashboard designed to provide businesses with real-time insights through charts, dynamic tables, and advanced filters. The solution supports KPI tracking, report generation, and efficient data analysis—making it ideal for operational oversight and performance monitoring.",
-    pic1: "",
+    pic1: TSAdminAdmin,
     problem:
       "Our client needed to modernize an existing PHP-based human resource management system used across multiple educational institutions. The original platform offered limited data presentation through static tables, which made it difficult to extract actionable insights or perform in-depth analysis.",
-    pic2: "",
+    pic2: TSAdminReports,
     solution:
       "We delivered a modern, data-driven dashboard interface incorporating visually engaging charts, graphs, and interactive tables. Features such as advanced filters (date ranges, usernames, tags) and on-demand reporting were integrated to enhance usability. The result is a streamlined, intuitive system that empowers administrators to make informed decisions and manage HR functions efficiently.",
     tags: [
@@ -91,9 +119,9 @@ const projects = [
   {
     id: 6,
     title: "3D Portfolio",
-    banner: "",
+    banner: Portfolio3D,
     desc: "A fully responsive and interactive portfolio website built using React Three Fiber and Framer Motion. This project showcases advanced WebGL integration and smooth animations, offering a visually immersive experience to highlight personal work in a creative and modern way.",
-    pic1: "",
+    pic1: PortfolioContact,
     tags: [
       "React",
       "Tailwind CSS",
@@ -107,9 +135,9 @@ const projects = [
   {
     id: 7,
     title: "Pet Store Website",
-    banner: "",
+    banner: PetStore,
     desc: "A responsive e-commerce concept built using Next.js and Framer Motion for a pet care and supply business. This was my first exploration into Next.js development and it allowed me to understand routing, layout structure, and animation integration for real-world business use cases.",
-    pic1: "",
+    pic1: PetStoreBlog,
     tags: [
       "Next.js",
       "Tailwind CSS",
@@ -122,9 +150,9 @@ const projects = [
   {
     id: 8,
     title: "Roof Right Website",
-    banner: "",
+    banner: Roofright,
     desc: "A sales-funnel-focused website for a roofing company, created as my second Next.js project. The site was designed with responsiveness, clear CTAs, and conversion flow in mind—ideal for service-based businesses looking to generate leads online.",
-    pic1: "",
+    pic1: RoofrightHome,
     tags: [
       "Next.js",
       "Tailwind CSS",
@@ -137,36 +165,36 @@ const projects = [
   {
     id: 9,
     title: "Pixel Art JS Game",
-    banner: "",
+    banner: NotFound,
     desc: "A pixel-based game created using Vanilla JavaScript and Framer Motion, inspired by my early curiosity about how low-level animations and frame updates work. This project allowed me to explore the fundamentals of visual rendering and animation on the web.",
-    pic1: "",
+    pic1: NotFound,
     tags: ["Javascript", "Tailwind CSS", "Framer Motion", "React", "Vercel"],
     link: "https://github.com/AbdulHannan242001/pixel-art",
   },
   {
     id: 10,
     title: "URL Blocker Script",
-    banner: "",
+    banner: NotFound,
     desc: "A Python script developed as a networking experiment to block specific URLs at the system level. Converted into a standalone .exe file, it provided a practical introduction to host file manipulation and local network access control.",
-    pic1: "",
+    pic1: NotFound,
     tags: ["Python"],
     link: "https://github.com/AbdulHannan242001/URLBlocker",
   },
   {
     id: 11,
     title: "UI Redesign for Web",
-    banner: "",
+    banner: UIRedesign,
     desc: "A UI redesign initiative inspired by modern design trends and executed using Figma. I applied fresh design principles to revamp my company’s homepage, focusing on layout consistency, hierarchy, and visual clarity.",
-    pic1: "",
+    pic1: UIRedesign,
     tags: ["Figma"],
     link: "https://www.figma.com/proto/UXuLo1e7jyjjYwG5U5HJYp/Project-1?node-id=2002-10&t=pRDBCqLAmgH8Sbwg-1",
   },
   {
     id: 12,
     title: "Purchase Order Generator",
-    banner: "",
+    banner: NotFound,
     desc: "A robust business application enabling companies to generate, validate, track, and manage purchase orders efficiently. Additional modules include inventory, GRN (Goods Receipt Note), and distribution management. Built using the MERN stack and styled with Tailwind CSS for a clean, responsive interface.",
-    pic1: "",
+    pic1: NotFound,
     tags: [
       "React",
       "Tailwind CSS",
@@ -181,9 +209,9 @@ const projects = [
   {
     id: 13,
     title: "E-Commerce Website with CRM",
-    banner: "",
+    banner: NotFound,
     desc: "An advanced e-commerce solution integrated with a CRM for end-to-end business operations. Features include order management, product updates, sales creation, banner customization, and performance tracking. Built using the MERN stack with a responsive and modern UI.",
-    pic1: "",
+    pic1: NotFound,
     tags: [
       "React",
       "Tailwind CSS",
@@ -197,9 +225,9 @@ const projects = [
   {
     id: 14,
     title: "Task Tracking App",
-    banner: "",
+    banner: NotFound,
     desc: "A task management platform inspired by tools like Jira and Trello. Allows users to manage projects, assign tasks, and track issues across teams. Built using the MERN stack, it offers a collaborative interface for productive work environments.",
-    pic1: "",
+    pic1: NotFound,
     tags: [
       "React",
       "Tailwind CSS",
@@ -213,9 +241,9 @@ const projects = [
   {
     id: 15,
     title: "Stock Inventory App",
-    banner: "",
+    banner: NotFound,
     desc: "A comprehensive inventory management system for small businesses and warehouses. Features include real-time stock tracking, sales management, and report generation. Designed with a professional and intuitive interface using the MERN stack.",
-    pic1: "",
+    pic1: NotFound,
     tags: [
       "React",
       "Tailwind CSS",
@@ -229,26 +257,26 @@ const projects = [
   {
     id: 16,
     title: "Ping Pong Game",
-    banner: "",
+    banner: NotFound,
     desc: "A retro-inspired two-player ping pong game with added power-ups and power-downs, developed using Python and Pygame. This project helped solidify my understanding of object-oriented programming and basic game development principles.",
-    pic1: "",
+    pic1: NotFound,
     tags: ["Python", "Pygame"],
     link: "https://github.com/AbdulHannan242001/GameFirst",
   },
   {
     id: 17,
     title: "2D Platformer Game",
-    banner: "",
+    banner: KnightGame,
     desc: "A classic 2D platformer created using the Godot game engine. This project introduced me to game development at scale using GDScript—a Python-like language. It marks my first step toward building solo indie games in the future.",
-    pic1: "",
+    pic1: KnightGame,
     tags: ["Godot", "GDScript"],
   },
   {
     id: 18,
     title: "Components Library",
-    banner: "",
+    banner: Components,
     desc: "A personal collection of reusable UI components and layout sections including scroll animations, micro-interactions, buttons, and cards. Inspired by modern web design, this library streamlines development and ensures consistent quality across all my projects.",
-    pic1: "",
+    pic1: Components,
     tags: [
       "React",
       "Tailwind CSS",
@@ -262,4 +290,4 @@ const projects = [
   },
 ];
 
-export default projects
+export default projects;

@@ -59,7 +59,7 @@ const TechStack = () => {
       icon: <TbBrandPython />,
     },
     {
-      title: "Godot Engine",
+      title: "Godot",
       icon: <SiGodotengine />,
     },
     {
@@ -94,7 +94,7 @@ const TechStack = () => {
         onMouseMove={handleMouseMove}
         className=" relative z-10 h-fit"
       >
-        <div className="max-w-[1400px] p-[10px] mx-auto flex flex-1 flex-wrap gap-[10px] relative h-full w-full min-h-[50dvh] overflow-hidden rounded-md shadow-2xl shadow-foreground">
+        <div className="max-w-[1400px] p-[10px] mx-auto flex flex-1 items-center justify-center flex-wrap gap-[10px] relative h-full w-full min-h-[50dvh] overflow-hidden rounded-md shadow-2xl shadow-foreground">
           <motion.div
             className="absolute size-[120px] bg-gradient-to-tr from-neutral-50 to-neutral-100 rounded-full blur-3xl z-10 pointer-events-none"
             style={{ x, y, translateX: "-50%", translateY: "-50%" }}
@@ -108,10 +108,10 @@ const TechStack = () => {
           {stackData.map((item, index) => (
             <div
               key={index}
-              className="w-[221.5px] h-[221.5px] flex flex-col justify-center items-center gap-[10px] hover:bg-white/20 border-3 border-white/10 rounded-lg p-[10px] z-30 bg-foreground text-white"
+              className="max-w-[125px] sm:max-w-[200px] w-full px-[30px] flex flex-col justify-center items-center gap-[10px] hover:bg-white/20 border-3 border-white/10 rounded-lg p-[10px] z-30 bg-foreground text-white"
             >
-              <div className="text-9xl">{item.icon}</div>
-              <h2 className="text-lg">{item.title}</h2>
+              <div className="text-5xl sm:text-9xl">{item.icon}</div>
+              <h2 className="text-sm sm:text-lg">{item.title}</h2>
             </div>
           ))}
         </div>
