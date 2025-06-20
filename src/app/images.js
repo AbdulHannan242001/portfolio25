@@ -6,7 +6,7 @@ import listLinkHome from "../../public/assets/Listlinkapp/ListLinkHome.png";
 import listLinkList from "../../public/assets/Listlinkapp/ListLinkList.png";
 
 // Bethmar
-import Bethmar from "../../public/assets/Bethmar/Bethmar.png";
+import Bethmar from "../../public/assets/Bethmar/BethMar.png";
 import BethmarLoc from "../../public/assets/Bethmar/BethmarLoc.png";
 import BethmarServices from "../../public/assets/Bethmar/BethmarServices.png";
 
