@@ -23,14 +23,14 @@ const Experience = () => {
         className="h-[300dvh] relative flex flex-col gap-[100px] m-2"
       >
         <div className="rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg sticky top-14 w-full h-[80dvh] bg-white overflow-hidden">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
             <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter">
               FRONT END DEV
             </h3>
-            <span className="text-lg text-primary">Web Development</span>
+            <span className="text-sm md:text-lg text-primary border border-primary rounded-full px-4 py-1">Web Development</span>
           </div>
-          <p className="font-bold">2021 - Present</p>
-          <h2 className="text-4xl font-bold font-mono py-[15px] text-gray-500">
+          <p className="font-bold mt-2 md:text-base text-xs">2021 - Present</p>
+          <h2 className="text-4xl font-light font-mono py-[15px] text-gray-700">
             Saska Solutions
           </h2>
           <p className="text-lg max-w-xl">
@@ -48,14 +48,14 @@ const Experience = () => {
           </div>
         </div>
         <div className="rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg sticky top-24 w-full h-[90dvh] bg-foreground text-white overflow-hidden">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
             <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter">
               BMS Operator
             </h3>
-            <span className="text-lg text-primary">Building Management</span>
+            <span className="text-sm md:text-lg text-primary border border-primary rounded-full px-4 py-1">Building Management</span>
           </div>
-          <p className="font-bold">2021 - 2021</p>
-          <h2 className="text-4xl font-bold font-mono py-[15px] text-gray-500">
+          <p className="font-bold mt-2 md:text-base text-xs">2021 - 2021</p>
+          <h2 className="text-4xl font-light font-mono py-[15px] text-gray-300">
             JES Engineering
           </h2>
           <p className="text-lg max-w-xl">
@@ -73,16 +73,16 @@ const Experience = () => {
           </div>
         </div>
         <div className="rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg sticky top-34 w-full h-[90dvh] bg-white overflow-hidden">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
             <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter">
               Field Supervisor
             </h3>
-            <span className="text-lg text-primary">
+            <span className="text-sm md:text-lg text-primary border border-primary rounded-full px-4 py-1">
               Electrical Installation
             </span>
           </div>
-          <p className="font-bold">2020 - 2021</p>
-          <h2 className="text-4xl font-bold font-mono py-[15px] text-gray-500">
+          <p className="font-bold mt-2 md:text-base text-xs">2020 - 2021</p>
+          <h2 className="text-4xl font-light font-mono py-[15px] text-gray-700">
             AK Engineering
           </h2>
           <p className="text-lg max-w-xl">

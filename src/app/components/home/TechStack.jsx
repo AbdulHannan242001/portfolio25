@@ -59,7 +59,7 @@ const TechStack = () => {
       icon: <TbBrandPython />,
     },
     {
-      title: "Godot",
+      title: "Godot Engine",
       icon: <SiGodotengine />,
     },
     {
@@ -85,33 +85,30 @@ const TechStack = () => {
   ];
 
   return (
-    <main className="w-full bg-gradient-to-tr from-foreground-dark to-foreground min-h-[50dvh] py-[60px]">
+    <main className="w-full bg-gradient-to-b from-foreground to-foreground-dark min-h-screen py-[60px]">
       <h2 className="text-6xl font-bold font-mono text-center uppercase text-white pb-[100px]">
         Tech Stack
       </h2>
       <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
-        className=" relative z-10 h-fit"
+        className=" relative z-10 h-fit w-fit mx-auto rounded"
       >
-        <div className="max-w-[1400px] p-[10px] mx-auto flex flex-1 items-center justify-center flex-wrap gap-[10px] relative h-full w-full min-h-[50dvh] overflow-hidden rounded-md shadow-2xl shadow-foreground">
+        <div className="max-w-[1180px] p-[10px] mx-auto flex flex-1 flex-wrap gap-[4px] relative h-full w-full min-h-[50dvh] overflow-hidden rounded-bd">
           <motion.div
-            className="absolute size-[120px] bg-gradient-to-tr from-neutral-50 to-neutral-100 rounded-full blur-3xl z-10 pointer-events-none"
-            style={{ x, y, translateX: "-50%", translateY: "-50%" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-          />
-          <motion.div
-            className="absolute size-[120px] bg-gradient-to-tr from-primary to-sky-500 rounded-full blur-3xl z-10 pointer-events-none"
-            style={{ x, y, translateX: "-50%", translateY: "-50%" }}
+            className="absolute size-[60px] md:size-[120px] bg-gradient-to-tr from-neutral-50 to-neutral-100 rounded-full blur-3xl z-10 pointer-events-none"
+            style={{ x, y }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           />
           {stackData.map((item, index) => (
             <div
+              className="relative w-[144px] h-[144px] md:w-[228px] md:h-[228px] z-20 bg-white/10 rounded-lg flex items-center justify-center"
               key={index}
-              className="max-w-[125px] sm:max-w-[200px] w-full px-[30px] flex flex-col justify-center items-center gap-[10px] hover:bg-white/20 border-3 border-white/10 rounded-lg p-[10px] z-30 bg-foreground text-white"
             >
-              <div className="text-5xl sm:text-9xl">{item.icon}</div>
-              <h2 className="text-sm sm:text-lg">{item.title}</h2>
+              <div className="w-[140px] h-[140px] md:w-[221.5px] md:h-[221.5px] flex flex-col justify-center items-center gap-[10px] rounded-lg p-[10px] z-30 text-white bg-foreground hover:bg-foreground transition-all duration-300 ease-in-out">
+                <div className="text-6xl md:text-9xl">{item.icon}</div>
+                <h2 className="text-sm md:text-lg">{item.title}</h2>
+              </div>
             </div>
           ))}
         </div>

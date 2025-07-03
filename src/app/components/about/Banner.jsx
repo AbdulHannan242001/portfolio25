@@ -1,9 +1,17 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { use, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
-import { listLink, FusionFilling, Portfolio3D, UIRedesign, KnightGame, Components, PetStore } from "../../images";
+import {
+  listLink,
+  FusionFilling,
+  Portfolio3D,
+  UIRedesign,
+  KnightGame,
+  Components,
+  PetStore,
+} from "../../images";
 
 const Banner = () => {
   const containerRef = useRef(null);
@@ -13,6 +21,11 @@ const Banner = () => {
     offset: ["start start", "end end"],
   });
 
+  const bannerColor = useTransform(
+    scrollYProgress,
+    [0, 0.7],
+    ["#090909", "#f9f9f9"]
+  );
   const scale4times = useTransform(scrollYProgress, [0, 0.8], [1, 4]);
   const scale6times = useTransform(scrollYProgress, [0, 0.8], [1, 6]);
   const scale8times = useTransform(scrollYProgress, [0, 0.8], [1, 8]);
@@ -86,7 +99,10 @@ const Banner = () => {
     },
   ];
   return (
-    <section className="flex flex-col justify-center items-center min-h-screen py-[10vh] space-y-[10vh] overflow-clip">
+    <motion.section
+      style={{ backgroundColor: bannerColor }}
+      className="flex flex-col justify-center items-center min-h-screen pt-[10vh] space-y-[10vh] overflow-clip"
+    >
       <div ref={containerRef} className="h-[300vh] relative w-full">
         <div className="w-full h-[100vh] sticky top-0 overflow-clip">
           {pictureArray.map(
@@ -132,7 +148,7 @@ const Banner = () => {
           )}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

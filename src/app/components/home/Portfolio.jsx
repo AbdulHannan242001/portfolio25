@@ -154,7 +154,7 @@ const Portfolio = () => {
       <div className="flex flex-col gap-[30px] rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg bg-white">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="flex flex-col">
-            <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
+            <h3 className="text-slate-700 text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               For Clients
             </h3>
             <span className="text-sm sm:text-lg text-primary">
@@ -172,7 +172,7 @@ const Portfolio = () => {
       <div className="flex flex-col gap-[30px] rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg bg-white">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="flex flex-col">
-            <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
+            <h3 className="text-slate-700 text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               Practice
             </h3>
             <span className="text-sm sm:text-lg text-primary">Sharpening the tools.</span>
@@ -187,7 +187,7 @@ const Portfolio = () => {
       <div className="flex flex-col gap-[30px] rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg bg-white">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="flex flex-col">
-            <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
+            <h3 className="text-slate-700 text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               GitHub Graveyard
             </h3>
             <span className="text-sm sm:text-lg text-primary">
@@ -205,7 +205,7 @@ const Portfolio = () => {
       <div className="flex flex-col gap-[30px] rounded-lg py-[20px] sm:py-[60px] px-[10px] sm:px-[30px] shadow-lg bg-white">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="flex flex-col">
-            <h3 className="text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
+            <h3 className="text-slate-700 text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               Curiosity Satisfaction
             </h3>
             <span className="text-sm sm:text-lg text-primary">

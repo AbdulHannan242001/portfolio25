@@ -72,7 +72,7 @@ const Link = ({ heading, subheading, imgSrc, href, btnTxt }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative font-semibold z-10 block text-xl text-gray-800 transition-colors duration-500 group-hover:text-primary md:text-4xl"
+          className="relative z-10 block text-xl text-slate-700 transition-colors duration-500 group-hover:text-primary md:text-4xl"
         >
           {heading.split("").map((char, i) => (
             <motion.span
@@ -89,7 +89,7 @@ const Link = ({ heading, subheading, imgSrc, href, btnTxt }) => {
           ))}
         </motion.span>
         <motion.span
-          className="hidden sm:block text-lg text-gray-500 group-hover:text-primary"
+          className="hidden sm:block text-lg text-slate-500 group-hover:text-primary mt-2"
           variants={{
             initial: { opacity: 0, y: 10 },
             whileHover: { opacity: 1, y: 0 },

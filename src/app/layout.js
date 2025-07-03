@@ -2,6 +2,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
+import LenisProvider from "./components/global/LenisProvider";
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -47,18 +48,19 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body className="antialiased">
-        <div className="fixed top-[10px] left-0 right-0 z-[9999]">
-          <Navbar />
-        </div>
-        {children}
-        <Footer />
+        <LenisProvider>
+          <div className="fixed top-[10px] left-0 right-0 z-[9999]">
+            <Navbar />
+          </div>
+          {children}
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   );

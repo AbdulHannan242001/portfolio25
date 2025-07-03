@@ -69,7 +69,7 @@ const Page = ({ params }) => {
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="text-sm text-white px-4 py-2 rounded-md bg-gradient-to-t from-foreground-dark to-foreground"
+                  className="text-sm text-foreground-dark px-4 py-2 rounded-full bg-transparent border border-foreground-dark"
                 >
                   {tag}
                 </span>
