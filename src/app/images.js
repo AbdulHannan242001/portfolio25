@@ -46,11 +46,17 @@ import KnightGame from "../../public/assets/Game/KnightGame.png";
 // Components
 import Components from "../../public/assets/Components/Components.png";
 
+// Shopify Headless
+import ShopifyHeadless from "../../public/assets/ShopifyHeadless/ShopifyHeadless.png";
+import HeadlessCollections from "../../public/assets/ShopifyHeadless/HeadlessCollections.png";
+import HeadlessProducts from "../../public/assets/ShopifyHeadless/HeadlessProducts.png";
+
 // Not Found (Placeholder)
 import NotFound from "../../public/assets/NotFound.jpg";
 
 // SaskaSolutions Logo
 import SaskaSolutions from "../../public/assets/SaskaSolutions.png";
+
 
 export {
   listLink,
@@ -79,4 +85,7 @@ export {
   Components,
   NotFound,
   SaskaSolutions,
+  ShopifyHeadless,
+  HeadlessCollections,
+  HeadlessProducts,
 };

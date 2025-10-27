@@ -12,16 +12,24 @@ import {
   UIRedesign,
   KnightGame,
   Components,
+  ShopifyHeadless,
   NotFound,
 } from "../../images";
 
 const Portfolio = () => {
   const clientProjects = [
     {
-      heading: "List Link App",
-      subheading: "React based application for creating lists & sharing them.",
-      imgSrc: listLink,
-      href: "/project/1",
+      heading: "Shopify Headless",
+      subheading: "A Shopify Headless Ecommerce website.",
+      imgSrc: ShopifyHeadless,
+      href: "/project/19",
+    },
+    {
+      heading: "Fusion Fillings Website",
+      subheading:
+        "Website for branding and ordering food products from Fusion Fillings. A Home Based Business.",
+      imgSrc: FusionFilling,
+      href: "/project/4",
     },
     {
       heading: "Bethmar Website",
@@ -38,11 +46,10 @@ const Portfolio = () => {
       href: "/project/3",
     },
     {
-      heading: "Fusion Fillings Website",
-      subheading:
-        "Website for branding and ordering food products from Fusion Fillings. A Home Based Business.",
-      imgSrc: FusionFilling,
-      href: "/project/4",
+      heading: "List Link App",
+      subheading: "React based application for creating lists & sharing them.",
+      imgSrc: listLink,
+      href: "/project/1",
     },
     {
       heading: "TS Admin Dashboard",
@@ -56,7 +63,8 @@ const Portfolio = () => {
   const practiceProjects = [
     {
       heading: "3D Portfolio - Three.js",
-      subheading: "My old personal portfolio in Three.js and Framer Motion. This is where it all started.",
+      subheading:
+        "My old personal portfolio in Three.js and Framer Motion. This is where it all started.",
       imgSrc: Portfolio3D,
       href: "/project/6",
     },
@@ -175,7 +183,9 @@ const Portfolio = () => {
             <h3 className="text-slate-700 text-4xl sm:text-6xl font-mono tracking-tighter uppercase">
               Practice
             </h3>
-            <span className="text-sm sm:text-lg text-primary">Sharpening the tools.</span>
+            <span className="text-sm sm:text-lg text-primary">
+              Sharpening the tools.
+            </span>
           </div>
           <p className="text-xs sm:text-base mt-auto max-w-md font-medium">
             Small builds to get comfy with new skills and workflows.

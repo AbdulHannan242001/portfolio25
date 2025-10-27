@@ -23,7 +23,11 @@ import {
   UIRedesign,
   KnightGame,
   Components,
+  ShopifyHeadless,
+  HeadlessCollections,
+  HeadlessProducts,
   NotFound,
+  SaskaSolutions,
 } from "../../src/app/images";
 
 const projects = [
@@ -287,6 +291,26 @@ const projects = [
       "Vercel",
     ],
     link: "https://components-gamma-beige.vercel.app/",
+  },
+  {
+    id: 19,
+    title: "Shopify Headless",
+    banner: ShopifyHeadless,
+    desc: "An Ecommerce website for a Shopify Headless Store. It features a responsive design, scroll animations, and a custom checkout flow. The site was built with Next.js and Tailwind CSS, and deployed on Vercel.",
+    pic1: HeadlessCollections,
+    problem: "The client required extensive control over the UI and Design of his ecommerce website with SEO optimization all along with the shopify CMS for easy product management and updates.",
+    pic2: HeadlessProducts,
+    solution: "Using the Shopify Cleint API and the Shopify Headless Store API, I was able to create a fully functional and responsive website that met the client's needs. The website was built with Next.js and Tailwind CSS, and deployed on Vercel.",
+    tags: [
+      "Shopify Headless",
+      "Next.js",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Framer Motion",
+      "Scroll Animations",
+      "Vercel",
+    ],
+    link: "https://www.haaaib.com/",
   },
 ];
 
