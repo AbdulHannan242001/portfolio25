@@ -14,10 +14,32 @@ import {
   Components,
   ShopifyHeadless,
   NotFound,
+  TapeaseBanner,
+  Firethief,
+  AyluxBanner,
 } from "../../images";
 
 const Portfolio = () => {
   const clientProjects = [
+    {
+      heading: "Aylux - Australian Logistics Company",
+      subheading: "Professional website for Logistics Company.",
+      imgSrc: AyluxBanner,
+      href: "/project/22",
+    },
+    {
+      heading: "Firethief - Divi Theme",
+      subheading: "A blog based personal portfoilio website.",
+      imgSrc: Firethief,
+      href: "/project/21",
+    },
+    {
+      heading: "Tapease Website & ERP - MERN",
+      subheading:
+        "A website and custom ERP system for a Australia’s Premier Eftpos Service for Transport.",
+      imgSrc: TapeaseBanner,
+      href: "/project/20",
+    },
     {
       heading: "Shopify Headless",
       subheading: "A Shopify Headless Ecommerce website.",

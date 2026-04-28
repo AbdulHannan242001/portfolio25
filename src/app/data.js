@@ -28,6 +28,15 @@ import {
   HeadlessProducts,
   NotFound,
   SaskaSolutions,
+  TapeaseProblem,
+  TapeaseSolution,
+  TapeaseBanner,
+  Firethief,
+  FirethiefProblem,
+  FirethiefSolution,
+  AyluxBanner,
+  AyluxSolution,
+  AyluxProblem,
 } from "../../src/app/images";
 
 const projects = [
@@ -298,9 +307,11 @@ const projects = [
     banner: ShopifyHeadless,
     desc: "An Ecommerce website for a Shopify Headless Store. It features a responsive design, scroll animations, and a custom checkout flow. The site was built with Next.js and Tailwind CSS, and deployed on Vercel.",
     pic1: HeadlessCollections,
-    problem: "The client required extensive control over the UI and Design of his ecommerce website with SEO optimization all along with the shopify CMS for easy product management and updates.",
+    problem:
+      "The client required extensive control over the UI and Design of his ecommerce website with SEO optimization all along with the shopify CMS for easy product management and updates.",
     pic2: HeadlessProducts,
-    solution: "Using the Shopify Cleint API and the Shopify Headless Store API, I was able to create a fully functional and responsive website that met the client's needs. The website was built with Next.js and Tailwind CSS, and deployed on Vercel.",
+    solution:
+      "Using the Shopify Cleint API and the Shopify Headless Store API, I was able to create a fully functional and responsive website that met the client's needs. The website was built with Next.js and Tailwind CSS, and deployed on Vercel.",
     tags: [
       "Shopify Headless",
       "Next.js",
@@ -311,6 +322,61 @@ const projects = [
       "Vercel",
     ],
     link: "https://www.haaaib.com/",
+  },
+  {
+    id: 20,
+    title: "Tapease Website & ERP - MERN",
+    banner: TapeaseBanner,
+    desc: "A website and custom ERP system for a Australia’s Premier Eftpos Service for Transport.",
+    pic1: TapeaseProblem,
+    problem:
+      "Tapease approached us with the need for a comprehensive digital solution to enhance their online presence and streamline their business operations. They required a modern, responsive website to showcase their services and a custom ERP system to manage their internal processes efficiently.",
+    pic2: TapeaseSolution,
+    solution:
+      "We developed a fully responsive website that effectively communicates Tapease’s value proposition and services to their target audience. Additionally, we created a custom ERP system tailored to their specific business needs, enabling them to manage operations, track performance, and improve overall efficiency. The combination of a strong online presence and an efficient internal system has positioned Tapease for continued growth and success in the competitive transport industry.",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Framer Motion",
+    ],
+    link: "https://www.tapease.com.au/",
+  },
+  {
+    id: 21,
+    title: "Firethief Wordpress Website",
+    banner: Firethief,
+    desc: "A blog based personal portfoilio website.",
+    pic1: FirethiefProblem,
+    problem:
+      "The client wanted to have a blog based personal portfoilio website.One that is easy to update and maintain without needing to code. They also wanted a modern and responsive design that would showcase their work and attract potential clients. The most important requirement was to have the ability to share the written blog from the website to his social media platforms with a click of a button.",
+    pic2: FirethiefSolution,
+    solution:
+      "We developed a modern and responsive website using Wordpress as the CMS. The website was designed to be easy to update and maintain, allowing the client to easily add new blog posts and portfolio items without needing to code. We also integrated social media sharing functionality, enabling the client to share their blog posts on various social media platforms with just a click of a button. Without depending on any plugins or third-party services, the ability to share the written blog from the website to his social media platforms with a click of a button was ensured.",
+    tags: [
+      "Wordpress",
+      "Divi",
+      "Responsive Design",
+      "Social Media Integration",
+      "Blog",
+    ],
+    link: "https://www.firethief.com/",
+  },
+  {
+    id: 22,
+    title: "Aylux - Australian Logistics Company",
+    banner: AyluxBanner,
+    desc: "Professional website for Logistics Company.",
+    pic1: AyluxProblem,
+    problem:
+      "The client wanted to have a simple yet fast website. Something that catch the attention of the visitors and make them want to explore the website. This website would allow them to showcase their services and attract potential clients around the world.",
+    pic2: AyluxSolution,
+    solution:
+      "Using the trustworthy HTML, CSS and JavaScript, I was able to create a responsive website that met the client's needs.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Framer Motion"],
+    link: "https://www.aylux.com.au/",
   },
 ];
 

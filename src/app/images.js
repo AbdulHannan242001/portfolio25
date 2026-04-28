@@ -57,6 +57,21 @@ import NotFound from "../../public/assets/NotFound.jpg";
 // SaskaSolutions Logo
 import SaskaSolutions from "../../public/assets/SaskaSolutions.png";
 
+// Tapease
+import TapeaseSolution from "../../public/assets/Tapease/Tapease-Solution.png";
+import TapeaseProblem from "../../public/assets/Tapease/Tapease-Problem.png";
+import TapeaseBanner from "../../public/assets/Tapease/Tapease-Banner.png";
+
+// Firethief
+import Firethief from "../../public/assets/Firethief/Firethief.png";
+import FirethiefProblem from "../../public/assets/Firethief/Firethief-Problem.png";
+import FirethiefSolution from "../../public/assets/Firethief/Firethief-Solution.png";
+
+// Aylux
+import AyluxBanner from "../../public/assets/Aylux/AyluxBanner.png";
+import AyluxSolution from "../../public/assets/Aylux/Aylux-Solution.png";
+import AyluxProblem from "../../public/assets/Aylux/Aylux-Problem.png";
+
 
 export {
   listLink,
@@ -88,4 +103,13 @@ export {
   ShopifyHeadless,
   HeadlessCollections,
   HeadlessProducts,
+  TapeaseProblem,
+  TapeaseSolution,
+  TapeaseBanner,
+  Firethief,
+  FirethiefProblem,
+  FirethiefSolution,
+  AyluxBanner,
+  AyluxSolution,
+  AyluxProblem,
 };
