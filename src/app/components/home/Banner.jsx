@@ -22,7 +22,7 @@ const Banner = () => {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    isMobile ? ["0%", "0%"] : ["0%", "-50%"]
+    isMobile ? ["0%", "0%"] : ["0%", "-50%"],
   );
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   const bgY = useTransform(scrollYProgress, [0, 1], ["-1000%", "0%"]);
@@ -39,9 +39,10 @@ const Banner = () => {
         <p className="max-w-xl text-sm sm:text-lg leading-[120%]">
           A Frontend Developer for 3D & interactive websites. Working on{" "}
           <span className="text-primary">Next.js</span>,{" "}
-          <span className="text-primary">React.js</span> &{" "}
-          <span className="text-primary">Three.js</span>. I'm a Computer Science
-          student at Emaan Institute of Management & Sciences (EIMS).
+          <span className="text-primary">React.js</span>,{" "}
+          <span className="text-primary">Three.js</span> &{" "}
+          <span className="text-primary">Wordpress</span>. I'm a Computer
+          Science student at Emaan Institute of Management & Sciences (EIMS).
         </p>
         <p className="font-medium text-sm sm:text-lg">
           Working with javascript for almost half a{" "}

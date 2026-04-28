@@ -12,6 +12,7 @@ import {
   TbBrandReact,
   TbBrandTailwind,
   TbBrandThreejs,
+  TbBrandWordpress
 } from "react-icons/tb";
 import { SiGodotengine } from "react-icons/si";
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
@@ -49,6 +50,10 @@ const TechStack = () => {
     {
       title: "Three Js",
       icon: <TbBrandThreejs />,
+    },
+    {
+      title: "Wordpress",
+      icon: <TbBrandWordpress />,
     },
     {
       title: "Vercel",
